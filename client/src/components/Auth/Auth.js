@@ -4,7 +4,6 @@ import { Avatar, Button, Paper, Grid, Typography, Container, } from "@material-u
 import { GoogleLogin } from 'react-google-login';
 import useStyles from "./styles";
 import Input from "./Input";
-import Icon from "./icon";
 
 // const initialState = { firstName: "", lastName: "", email: "", password: "", confirmPassword: "" };
 
@@ -61,7 +60,7 @@ const Auth = () => {
           <GoogleLogin
             clientId="810292627031-sce8ctit65474vj8m4ul72o26e02hmft.apps.googleusercontent.com"
             render={(renderProps) => (
-              <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
+              <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<h3>G</h3>} variant="contained">
                 Google Sign In
               </Button>
             )}
