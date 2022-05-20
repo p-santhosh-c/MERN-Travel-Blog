@@ -1,69 +1,56 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { deepPurple } from '@material-ui/core/colors';
 
-export default makeStyles((theme) => ({
-  mainContainer: {
-    borderRadius: 15,
-    margin: '30px 0',
+export default makeStyles({
+  media: {
+    height: 0,
+    paddingTop: '56.25%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundBlendMode: 'darken',
+  },
+  border: {
+    border: 'solid',
+  },
+  fullHeightCard: {
+    height: '100%',
+  },
+  card: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '10px 50px',
+    borderRadius: '15px',
+    height: '100%',
+    position: 'relative',
   },
-  heading: {
-    color: 'rgba(0,183,255, 1)',
-    textDecoration: 'none',
+  overlay: {
+    position: 'absolute',
+    top: '20px',
+    left: '20px',
+    color: 'white',
   },
-  image: {
-    marginLeft: '15px',
+  overlay2: {
+    position: 'absolute',
+    top: '20px',
+    right: '20px',
+    color: 'white',
   },
-  toolbar: {
+  grid: {
     display: 'flex',
-    justifyContent: 'flex-end',
-    width: '400px',
   },
-  profile: {
+  details: {
     display: 'flex',
     justifyContent: 'space-between',
-    width: '400px',
+    margin: '20px',
   },
-  userName: {
+  title: {
+    padding: '0 16px',
+  },
+  cardActions: {
+    padding: '0 16px 8px 16px',
     display: 'flex',
-    alignItems: 'center',
+    justifyContent: 'space-between',
   },
-  brandContainer: {
-    display: 'flex',
-    alignItems: 'center',
+  cardAction: {
+    display: 'block',
+    textAlign: 'initial',
   },
-  smMargin: {
-    margin: theme.spacing(1),
-  },
-  purple: {
-    color: theme.palette.getContrastText(deepPurple[500]),
-    backgroundColor: deepPurple[500],
-  },
-  [theme.breakpoints.down('sm')]: {
-    appBar: {
-      padding: '10px 20px',
-    },
-    heading: {
-      display: 'none',
-    },
-    userName: {
-      display: 'none',
-    },
-    image: {
-      marginLeft: '5px',
-    },
-    toolbar: {
-      display: 'flex',
-      justifyContent: 'flex-end',
-      width: '160px',
-    },
-  },
-
-  actionDiv: {
-    textAlign: 'center',
-  },
-}));
+});
