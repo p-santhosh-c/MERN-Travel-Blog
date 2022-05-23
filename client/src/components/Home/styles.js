@@ -11,9 +11,6 @@ export default makeStyles((theme) => ({
     borderRadius: 4,
     margin: '1rem',
     padding: '16px',
-    position: 'fixed',
-    bottom: 0,
-    width: "100%",
   },
   gridContainer: {
     [theme.breakpoints.down('xs')]: {
